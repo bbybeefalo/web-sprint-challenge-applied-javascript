@@ -19,9 +19,19 @@ const Header = (title, date, temp) => {
   return headerDiv;
 }
 
-console.log(Header('butt', 'fart', 'lol'));
- 
+//---------------------------------//
 
+const container = document.querySelector(".header-container");
+const headerAppender = (selector) => {
+  container.appendChild(Header('i am working', 'hopefully', 'please'));
+}
+
+export { Header, headerAppender }
+
+
+
+
+  
 // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
@@ -34,15 +44,6 @@ console.log(Header('butt', 'fart', 'lol'));
   //    <span class="temp">{ temp }</span>
   //  </div>
   //
-
-
-const headerAppender = (selector) => {
-  
-}
-
-export { Header, headerAppender }
-
-
   // TASK 2
   // ---------------------
   // Implement this function taking a css selector as its only argument.
