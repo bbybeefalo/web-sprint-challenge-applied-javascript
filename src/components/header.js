@@ -23,8 +23,9 @@ const Header = (title, date, temp) => {
 
 
 const headerAppender = (selector) => {
-  let ting = document.querySelector(selector)
-  ting.appendChild(Header('fart', 'butt', 'poop'));
+  let holder = document.querySelector(selector)
+  let thing = Header('fart', 'butt', 'poop')
+  holder.appendChild(thing);
 }
 
 headerAppender(".header-container");
