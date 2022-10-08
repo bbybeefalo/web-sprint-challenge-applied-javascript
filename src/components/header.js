@@ -21,8 +21,9 @@ const Header = (title, date, temp) => {
 
 //---------------------------------//
 
-const container = document.querySelector(".header-container");
+
 const headerAppender = (selector) => {
+  const container = document.querySelector(".header-container");
   container.appendChild(Header('i am working', 'hopefully', 'please'));
 }
 
