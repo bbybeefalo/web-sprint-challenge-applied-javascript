@@ -24,11 +24,8 @@ const Header = (title, date, temp) => {
 
 const headerAppender = (selector) => {
   let holder = document.querySelector(selector);
-  holder.appendChild(Header('blue', 'green', 'yellow'));
+  holder.appendChild(Header('title', 'date', 'temp'));
 }
-
-
-
 
 export { Header, headerAppender }
 
